@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+  border: 1px solid #ccc;
+  width: 100vw;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #fff;
+    background-color: #213547;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+
+article {
+  border: 1px solid #ccc;
+  margin: 10px;
+  width: 100%;
+  padding: 1.25rem 2rem;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+
+.form {
+  /* border: 1px solid #ccc; */
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem 2rem;
+}
+
+.form label {
+  font-size: 1.25rem;
+  float: left;
+}
+
+.form .form-input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.5rem;
+  margin: 0.4rem 0;
+  height: 3rem;
+  border-radius: 0.8rem;
+  flex-basis: 80%;
+}
+
+.form-button,
+.form-button-delete,
+.form-button-save {
+  cursor: pointer;
+  flex-basis: 20%;
+  height: 3rem;
+  border-radius: 0.8rem;
+  border-top-left-radius: none;
+  border-bottom-left-radius: none;
+}
+
+.form-button-delete {
+  color: rgb(236, 97, 97);
+}
+
+.upload-button,
+.trash-button,
+input[type='checkbox'] {
+  width: 2rem;  
+  height: 2rem;
+  
+}
+
+.form-button {
+  background-color: green;
+}
+
+.upload-button {
+  color: white;
+}
+
+.div-new-todo {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.errorpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 5rem auto;
+  flex-direction: column;
+}
